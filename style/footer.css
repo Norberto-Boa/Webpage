@@ -1,0 +1,146 @@
+@font-face {
+    font-family: nunito;
+    src: url(../fontes/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: nunito-bold;
+    src: url(../fontes/Nunito-Bold.ttf);
+}
+
+@font-face {
+    font-family: inter-bold;
+    src: url(../fontes/Inter-Bold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+/*-------------FOOTER----------------*/
+
+#footer {
+    min-height: 50vh;
+    max-height: 50vh;
+    background-image: url(../images/footer-bg.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+
+    width: 100%;
+    padding: 2.5rem 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#footer .about{
+    max-width: 40%;
+}
+
+#footer .about .title{
+    font-size: 1.8rem;
+    color: #f9f9f9;
+    font-family: nunito-bold;
+    font-weight: bolder;
+}
+
+#footer .about p {
+    font-size: 1.1rem;
+    color: #f9f9f9;
+    font-family: nunito;
+    margin-top: 1rem;
+}
+
+#footer .links .title {
+    font-size: 1.8rem;
+    color: #f9f9f9;
+    font-family: nunito-bold;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#footer .links{
+    min-width: 20%;
+    max-width: 30%;
+}
+
+#footer .links ul{
+    margin-top: 1rem;
+    color: #f9f9f9;
+    list-style: none;
+    text-align: center;
+}
+
+#footer .links ul li{
+    font-family: nunito;
+    font-size: 1.2rem;
+    margin-top: .3rem;
+}
+
+#footer .media {
+    min-width: 20%;
+    max-width: 30%;
+}
+
+#footer .media .title {
+    font-size: 1.8rem;
+    color: #f9f9f9;
+    font-family: nunito-bold;
+    font-weight: bolder;
+}
+
+
+#footer .media .info p{
+    margin-top: 1rem;
+}
+
+#footer .media .info p i{
+    color: #2c76c0;
+    font-size: 1.2rem;
+}
+
+#footer .media .info p span{
+    color: #f9f9f9;
+    margin-left: .5rem;
+    font-size: 1.2rem;
+}
+#footer .media .social{
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    color: white;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footer .media .social .fa-facebook{
+    color: #f9f9f9;
+    transition: .8s ease-in-out;
+}
+
+#footer .media .social .fa-facebook:hover {
+    color: #3b5998;
+}
+
+#footer .media .social .fa-instagram {
+    color: #f9f9f9;
+    transition: .8s ease-in-out;
+}
+
+#footer .media .social .fa-instagram:hover {
+    color: orangered;
+}
+
+#footer .media .social .fa-whatsapp {
+    color: #f9f9f9;
+    transition: .8s ease-in-out;
+}
+
+#footer .media .social .fa-whatsapp:hover {
+    color: #128c7e;
+}

@@ -1,0 +1,139 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    min-height: 5vh;
+    padding: .8rem 5%;
+}
+
+.burguer{
+    display: none;
+}
+
+.navbar.scroll{
+    position: fixed;
+    min-height: 10vh !important;
+
+    background-color: #EAEAE0;
+
+    width: 100%;
+
+    z-index: 5;
+
+}
+
+.navbar.navbar.scroll ul li{
+    color: #1C4670;
+}
+
+.navbar.scroll .logo{
+    left: 10%;
+}
+
+.navbar.scroll ul{
+    margin-left: auto;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li{
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.logo img{
+    height: 2.5rem;
+    z-index: 6;
+}
+
+@media (max-width: 1050px) {
+    .line {
+        width: 1.8rem;
+        height: 3px;
+        background: #EAEAE0;
+        margin: 5px;
+    }
+
+    .navbar {
+        position: relative;
+        align-items: initial;
+        z-index: 5;
+    }
+
+
+    .navbar.scroll .burguer .line{
+        background-color: #1C4670;
+    }
+
+    .burguer {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 10;
+        display: block !important;
+    }
+
+    .navbar.scroll .navLinks li{
+        color: #EAEAE0 !important;
+    }
+
+    .navLinks {
+        position: fixed;
+        min-height: 100vh;
+        background: #1C4670;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        z-index: 9;
+
+        clip-path: circle(100px at 100% -50%);
+        -webkit-clip-path: circle(100px at 100% -50%);
+        transition: all 1.2s ease-in-out;
+    }
+
+    .navbar.open .line{
+        background-color: #EAEAE0 !important;
+    }
+
+    .navLinks li {
+        font-size: 1.5rem;
+        color: #EAEAE0;
+        font-family: sans-serif;
+    }
+
+    .active span{
+        position: relative;
+    }
+    .active span::after {
+        content: ' ';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: #012a4a;
+        animation: none !important;
+    }
+
+    .navLinks li:hover span::after {
+        height: 5px;
+    }
+
+    .navLinks.open {
+        clip-path: circle(1470px at 100% -15%);
+        -webkit-clip-path: circle(1470px at 100% -15%);
+    }
+
+    .navbar.open{
+        padding: 0;
+    }
+}
